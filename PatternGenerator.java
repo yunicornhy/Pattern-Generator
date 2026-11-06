@@ -21,7 +21,8 @@ while(rows>0){
 }
 }
 
-
+//precondition: rows is a positive integer
+//post-condition: a pattern of stars is printed with the specified number of rows
 public static void triangle(int rows){
 int i = 1;
 while (i <= rows) {
@@ -39,7 +40,8 @@ i++;
 }
 
 
-//preconditipo start is odd
+//precondition: start is a positive odd integer
+//post-condition: a pattern of odd numbers is printed starting from the specified odd integer down to 1
 public static void odds(int start){
 
 for (int i=start; i >= 1; i-=2) {
@@ -50,7 +52,8 @@ for (int i=start; i >= 1; i-=2) {
     System.out.println();
 }
 }
-
+//pre-condition: maxE is a positive integer
+//post-condition: a pattern of E's and O's is printed with the specified number of rows, alternating between E and O for each row
 public static void eo(int maxE) {
     boolean printE = maxE % 2 != 0;
 
@@ -78,7 +81,8 @@ public static void eo(int maxE) {
 
 
 
-
+//pre-condition: rows is a positive integer
+//post-condition: a pyramid pattern of numbers is printed with the specified number of rows
 public static void pyramid(int rows) {
     for (int i=1; i <= rows; i++){
         for (int space =1; space < i; space++){
@@ -111,6 +115,10 @@ odds (9);
 System.out.println();
 
 eo (6);
+
+System.out.println();
+
+eo (5);
 
 System.out.println();
 
